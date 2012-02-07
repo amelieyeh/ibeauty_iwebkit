@@ -1,0 +1,19 @@
+!!! 5
+%html
+  %head
+    %meta{:charset =>"utf-8"}
+    %meta{:content => "minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no", :name => "viewport"}
+    %meta{:content => "black-translucent", :name => "apple-mobile-web-app-status-bar-style"}
+    = javascript_include_tag ('functions.js')
+    = stylesheet_link_tag 'main'
+    = yield_content :head
+    %link{:href => "image.png", :rel => "apple-touch-icon"}
+    %link{:href => "images/favicon.ico", :rel =>"shrotcut icon", :type=>"image/x-icon"}
+    %link{:href => "images/favicon.ico", :rel =>"icon", :type=>"image/x-icon"}
+    %title FG愛漂亮-華人第一時尚穿搭網站FG愛漂亮 | 分享妳的時尚穿搭，一起愛漂亮
+  %body{:class => page_classes}
+    #wrapper
+      #header
+      #maincontent  
+        = yield
+      = partial "_partials/footer"

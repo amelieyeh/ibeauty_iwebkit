@@ -1,0 +1,13 @@
+%ul#function
+  %li=link_to "FG首頁", "http://www.fashionguide.com.tw/",:title => "FG首頁"
+  %li=link_to "立即登入", "/login.html",:title => "立即登入"
+  %li=link_to "管理我的帳號", "/member/account.html",:title => "管理我的帳號"
+  %li
+    %a{:href => "#",:title => "Facebook登入"}
+      =image_tag("icon-fbsignin.jpg", :alt=>"Facebook登入")
+  %li
+    %a{:href => "#",:title => "分享至Facebook"}
+      =image_tag("icon-social_facebook.png", :alt=>"分享至Facebook")  
+  %li
+    %a{:href => "#",:title => "RSS"}
+      =image_tag("icon-rss.gif", :alt=>"RSS")

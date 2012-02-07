@@ -1,0 +1,12 @@
+$navi-spacing:20px;
+@import "../images/navi/*.png";
+@include all-navi-sprites;
+
+$buttons-spacing:20px;
+@import "buttons/*.png";
+@include all-buttons-sprites;
+
+
+$icons-spacing:20px;
+@import "icons/*.png";
+@include all-icons-sprites;

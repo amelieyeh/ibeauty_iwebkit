@@ -1,0 +1,6 @@
+.masonry.centered
+  - 20.times do
+    .box
+      //- @imgheight = ( rand(20)*10 + 150 ).to_s
+      -#.box-img=link_to image_tag(lorem.image("180x" + @imgheight ), :alt =>"", :height => @imgheight ), "/share/single-share.html"
+      .box-img=link_to image_tag(lorem.image("120x180" ), :alt =>"", :height => "180"),"/share/single_share.html"

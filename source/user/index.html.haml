@@ -1,0 +1,17 @@
+#wrapper
+  #topbar
+    #title
+      FG愛漂亮
+    #leftnav= link_to "返回","beauty"
+  =partial "_partials/menu"
+  #content
+    %ul.pageitem
+      %li.textbox
+        .authorinfo
+          .userimg= link_to image_tag(lorem.image("80x80"),:alt=>""),"#"
+          .authorname= link_to lorem.name,"#"
+          =partial "_partials/user_stat"
+        .userintro= lorem.sentence
+      %li.textbox
+        .author-wall
+          =partial "_partials/share_wall"

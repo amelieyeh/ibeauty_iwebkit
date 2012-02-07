@@ -1,0 +1,32 @@
+#wrapper
+  #topbar
+    #title
+      FG愛漂亮
+    
+  =partial "_partials/menu"
+  .graytitle 穿搭分享
+  %ul.pageitem
+    %li.menu
+      %a{:href=>"share"}
+        %span.name 熱門推薦
+        %span.arrow
+    %li.menu
+      %a{:href=>"share"}
+        %span.name 衣服
+        %span.arrow
+    %li.menu
+      %a{:href=>"share"}
+        %span.name 鞋子
+        %span.arrow
+    %li.menu
+      %a{:href=>"share"}
+        %span.name 包包
+        %span.arrow
+    %li.menu
+      %a{:href=>"share"}
+        %span.name 配飾
+        %span.arrow
+  #loginbuttons
+    %ul
+      %li= link_to "註冊","login.html"
+      %li= link_to "登入","login.html"

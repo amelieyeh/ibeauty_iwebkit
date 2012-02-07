@@ -1,0 +1,17 @@
+.box{
+/*  float: left;*/
+  float:left;
+  margin: 5px;
+  width: 120px;
+  /*outline: 1px dashed red;*/
+  background-color: #fff;
+  padding:5px;
+  //padding-bottom: 0;
+  @include box-shadow(0 2px 5px rgba(#ccc, 1));
+  @include border-radius(5px);
+  .box-img{
+    width: 120px;
+    margin: 0 auto;
+  }
+  @include clearfix;
+}

@@ -1,0 +1,22 @@
+#wrapper
+  #topbar
+    #title
+      FG愛漂亮
+    #leftnav= link_to "返回","/share/single_share.html"
+  =partial "_partials/menu"
+  .comments
+    %ul.pageitem
+      -10.times do
+        %li.textbox
+          .commenthead= link_to image_tag(lorem.image("30"),:alt=>""),"#"
+          .commentname= link_to lorem.name,"#"
+          .commentword= lorem.sentence
+  .mycomment
+    .graytitle Leave a comment
+    %ul.pageitem
+      %li.textbox
+        %textarea{:name=>"TextArea", :rows=>"3"}
+        
+      
+        
+          

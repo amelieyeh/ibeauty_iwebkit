@@ -1,0 +1,38 @@
+#wrapper
+  #topbar
+    #title
+      FG愛漂亮 
+    #leftnav
+      =link_to image_tag("iwebkit5/home.png",:alt=>"home"),"index.html"
+  
+  %span.beautytitle
+    看達人
+    %span.beautyword 
+      看看女孩們都如何
+      %em 漂亮穿搭
+      、一起
+      %em 分享美麗心得
+  .graytitle 明星達人
+  .beautystars
+    %ul.pageitem
+      - 4.times do
+        %li.store
+          .userimg
+            =link_to image_tag( lorem.image ("90x100"),:alt=>""),"user"
+          .userinfo
+            .username= lorem.name
+            .userintro= lorem.sentence
+          .follow= link_to "follow","user",:class=>"buttons-follow_s"
+          %span.arrow
+  .graytitle 嚴選達人
+  .beauty-wall
+    %ul.pageitem
+      - 8.times do
+        %li.store
+          .userimg
+            =link_to image_tag( lorem.image ("90x100"),:alt=>""),"#"
+          .userinfo
+            .username= lorem.name
+            .userintro= lorem.sentence
+          .follow= link_to "follow","user",:class=>"buttons-follow_s"
+          %span.arrow
