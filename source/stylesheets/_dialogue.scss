@@ -1,0 +1,66 @@
+.store.issues{
+  height:60px;
+  padding:10px 5px;
+  // .userimg{
+    // padding-bottom:5px;
+  // }
+  .userpost{
+    p{
+      margin-left:60px;
+      padding:5px;
+      .posttime{
+        font-size:10px;
+        color:darken(#ccc, 30%);
+      }
+    }
+    .post{
+     @extend p;
+     font-size:12px;
+     //padding-bottom:5px;
+     width:200px;
+     @include ellipsis(true);   
+    }
+  }
+}
+
+.store.issue{
+  height:60px;
+}
+.issueinfo{
+  margin-left:65px;
+  padding:5px 0;
+}
+.posttime{
+  font-size:12px;
+  color:darken(#ccc, 30%);
+}
+.postcontent{
+  padding:5px;
+}
+.postword{
+  padding:5px 20px 5px 5px;
+  font-size:12px;
+  margin-left:60px;
+}
+
+.issuename{
+  float:left;
+  padding-right:15px;
+}
+.issuetime{
+  padding-top:8px;
+}
+.beautytitle.issue{
+  color:#A76268;
+}
+
+.beautytitle.reply{
+  color:darken(#A76268, 20%);
+  text-shadow: rgba(255,255,255,1) 1px 1px 1px;
+}
+
+.store.reply{
+  height:auto;
+  padding-bottom:10px;
+}
+
