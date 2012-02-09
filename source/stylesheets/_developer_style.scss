@@ -215,7 +215,8 @@ a:hover .arrow {
 	left: 0;
 	top: 0;
 	width: auto;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f5cdcd), color-stop(3%, #f2a7a7), color-stop(50%, #e16971), color-stop(51%, #E16971), color-stop(97%, #da4c58), to(#94313A));
+	// background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f5cdcd), color-stop(3%, #f2a7a7), color-stop(50%, #e16971), color-stop(51%, #E16971), color-stop(97%, #da4c58), to(#94313A));
+	@include background(image-url(""),linear-gradient(top , #f5cdcd, #94313A),radial-gradient(#c00, #fff 100px));
 	margin-bottom: 13px;
 }
 #title {
@@ -280,8 +281,9 @@ a:hover .arrow {
 }
 #tributton, #duobutton {
 	height: 44px;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#B39598), color-stop(3%, #B39598), color-stop(97%, #82676a),to(#665254));
-	margin: -13px 0 13px 0;
+	// background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#B39598), color-stop(3%, #B39598), color-stop(97%, #82676a),to(#665254));
+	@include background(image-url(""),linear-gradient(top , #B39598, #665254),radial-gradient(#c00, #fff 100px));
+  margin: -13px 0 13px 0;
 	text-align: center;
 }
 #tributton .links, #duobutton .links {
