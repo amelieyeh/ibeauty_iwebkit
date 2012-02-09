@@ -216,7 +216,7 @@ a:hover .arrow {
 	top: 0;
 	width: auto;
 	// background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f5cdcd), color-stop(3%, #f2a7a7), color-stop(50%, #e16971), color-stop(51%, #E16971), color-stop(97%, #da4c58), to(#94313A));
-	@include background(image-url(""),linear-gradient(top , #f5cdcd, #94313A),radial-gradient(#c00, #fff 100px));
+	@include background(image-url(""),linear-gradient(top , #f5cdcd, #e16971),radial-gradient(#c00, #fff 100px));
 	margin-bottom: 13px;
 }
 #title {
@@ -260,7 +260,8 @@ a:hover .arrow {
 	text-shadow: #FFF 0 1px 0;
 }
 .pageitem {
-	-webkit-border-radius: 8px;
+	// -webkit-border-radius: 8px;
+	@include border-radius(8px);
 	background-color: #fff;
 	border: #878787 solid 1px;
 	font-size: 12pt;
@@ -282,7 +283,7 @@ a:hover .arrow {
 #tributton, #duobutton {
 	height: 44px;
 	// background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#B39598), color-stop(3%, #B39598), color-stop(97%, #82676a),to(#665254));
-	@include background(image-url(""),linear-gradient(top , #B39598, #665254),radial-gradient(#c00, #fff 100px));
+	@include background(image-url(""),linear-gradient(top , #B39598, #765C5E),radial-gradient(#c00, #fff 100px));
   margin: -13px 0 13px 0;
 	text-align: center;
 }
@@ -459,15 +460,20 @@ fieldset {
 	width: auto;
 }
 .pageitem li:first-child:hover, .pageitem li:first-child a, .radiobutton:first-child input, .select:first-child select, li.button:first-child input, .bigfield:first-child input {
-	-webkit-border-top-left-radius: 8px;
-	-webkit-border-top-right-radius: 8px;
+	// -webkit-border-top-left-radius: 8px;
+	// -webkit-border-top-right-radius: 8px;
+	@include border-top-left-radius(8px);
+	@include border-top-right-radius(8px);
 }
 .pageitem li:last-child:hover, .pageitem li:last-child a, .radiobutton:last-child input, .select:last-child select, li.button:last-child input, .bigfield:last-child input {
-	-webkit-border-bottom-left-radius: 8px;
-	-webkit-border-bottom-right-radius: 8px;
+	// -webkit-border-bottom-left-radius: 8px;
+	// -webkit-border-bottom-right-radius: 8px;
+	@include border-bottom-left-radius(8px);
+	@include border-bottom-right-radius(8px);
 }
 .menu a:hover, .store:hover, .list #content li a:hover, .list .withimage:hover, .applist li:hover:nth-child(n),.ipodlist li:hover:nth-child(n) {
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F5CDCD), to(#D58888));
+	// background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F5CDCD), to(#D58888));
+	@include background(image-url(""),linear-gradient(top , #f5cdcd, #e16971),radial-gradient(#c00, #fff 100px));
 }
 .ipodlist li:hover:nth-child(n) .name,.ipodlist li:hover:nth-child(n) .time{border:0}
 li.menu a:hover .name, .store:hover .starcomment, .store:hover .name, .store:hover .comment, .list .withimage a:hover .comment {
@@ -564,10 +570,12 @@ li.menu a:hover .name, .store:hover .starcomment, .store:hover .name, .store:hov
 	-webkit-background-size: 57px;
 }
 li:first-child.store .image, .store:first-child a {
-	-webkit-border-top-left-radius: 8px 8px;
+	// -webkit-border-top-left-radius: 8px 8px;
+	@include border-top-left-radius(8px 8px);
 }
 li:last-child.store .image, .store:last-child a {
-	-webkit-border-bottom-left-radius: 8px 8px;
+	// -webkit-border-bottom-left-radius: 8px 8px;
+	@include border-bottom-left-radius(8px 8px);
 }
 .store .name, .applist .name {
 	font-size: 15px;
