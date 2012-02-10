@@ -170,7 +170,7 @@ a:hover .arrow {
 	width: 350px!important;
 }
 #duoselectionbuttons {
-	width: 293px;
+	width: 200px;
 	height: 24px;
 	top: 4px;
 }
@@ -180,7 +180,7 @@ a:hover .arrow {
 	top: 4px;
 }
 #triselectionbuttons a:first-child, #duoselectionbuttons a:first-child {
-	width: 150px;
+	width: 100px;
 	height: 22px;
 	line-height: 22px;
 }
@@ -190,7 +190,7 @@ a:hover .arrow {
 	line-height: 22px;
 }
 #triselectionbuttons a:last-child, #duoselectionbuttons a:last-child {
-	width: 150px;
+	width: 100px;
 	height: 22px;
 	line-height: 22px;
 }
@@ -333,7 +333,12 @@ a:hover .arrow {
 	//text-shadow: black 0 -1px 0;
 }
 #triselectionbuttons, #duoselectionbuttons {
-	-webkit-border-image: url('../images/iwebkit5/navbutton.png') 0 5 0 5;
+	// -webkit-border-image: url('../images/iwebkit5/navbutton.png') 0 5 0 5;
+	@include background(image-url(""),linear-gradient(top , #f5cdcd, #e16971),radial-gradient(#f5cdcd, #fff 100px));
+	// @include border-image(url('../images/iwebkit5/navbutton.png') 0 5 0 5)
+	// @include background(image-url(""),linear-gradient(top , #f5cdcd, #e16971),radial-gradient(#f5cdcd, #fff 100px));
+	@include border-radius(6px);
+  // @include border-bottom-left-radius(6px);
 	border-width: 0 5px 0 5px;
 	position: relative;
 	margin: auto;
@@ -345,9 +350,11 @@ a:hover .arrow {
 	border-right: solid 1px #556984;
 }
 #triselectionbuttons a:first-child, #duoselectionbuttons a:first-child {
-	margin-left: -4px;
-	-webkit-border-top-left-radius: 6px;
-	-webkit-border-bottom-left-radius: 6px;
+	// margin-left: -4px;
+	// -webkit-border-top-left-radius: 6px;
+	// -webkit-border-bottom-left-radius: 6px;
+	@include border-top-left-radius(6px);
+	@include border-bottom-left-radius(6px);
 }
 #triselectionbuttons a, #duoselectionbuttons a {
 	display: inline-block;
@@ -356,13 +363,18 @@ a:hover .arrow {
 	text-decoration: none;
 	margin-top: 1px;
 	text-shadow: black 0 -1px 0;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#909baa), color-stop(3%, #a5b4c6), color-stop(50%, #798eaa), color-stop(51%, #6b83a1), color-stop(97%, #6e85a3), to(#526379));
+	// background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#909baa), color-stop(3%, #a5b4c6), color-stop(50%, #798eaa), color-stop(51%, #6b83a1), color-stop(97%, #6e85a3), to(#526379));
+  // @include background(image-url(""),linear-gradient(top , #f5cdcd, #e16971),radial-gradient(#f5cdcd, #fff 100px));
+  float:left;
 }
+
 #triselectionbuttons a:last-child, #duoselectionbuttons a:last-child {
-	border-left: solid 1px #556984;
-	margin-right: -4px;
-	-webkit-border-top-right-radius: 6px;
-	-webkit-border-bottom-right-radius: 6px;
+	border-left: solid 1px #e16971;
+	margin-right: -3px;
+	// -webkit-border-top-right-radius: 6px;
+	// -webkit-border-bottom-right-radius: 6px;
+	@include border-top-right-radius(6px);
+	@include border-bottom-right-radius(6px);
 }
 #triselectionbuttons a:hover, #triselectionbuttons a#pressed, #duoselectionbuttons a:hover, #duoselectionbuttons a#pressed {
 	background: none;
@@ -964,10 +976,14 @@ li:last-child.store .image, .store:last-child a {
 	text-decoration: none;
 }
 .black #leftnav a:first-child, .transparent #leftnav a:first-child {
-	-webkit-border-image: url("../images/iwebkit5/navleftblack.png") 0 5 0 13;
+	// -webkit-border-image: url("../images/iwebkit5/navleftblack.png") 0 5 0 13;
+	// @include border-image(url("../images/iwebkit5/navleftblack.png") 0 5 0 13);
+	@include background(image-url("../images/iwebkit5/navleftblack.png"),linear-gradient(top , #f5cdcd, #e16971),radial-gradient(#c00, #fff 100px));
 }
 .black #leftnav a, .transparent #leftnav a {
-	-webkit-border-image: url("../images/iwebkit5/navlinkleftblack.png") 0 5 0 13;
+	// -webkit-border-image: url("../images/iwebkit5/navlinkleftblack.png") 0 5 0 13;
+	// @include border-image(url("../images/iwebkit5/navlinkleftblack.png") 0 5 0 13);
+	@include background(image-url("../images/iwebkit5/navleftblack.png"),linear-gradient(top , #f5cdcd, #e16971),radial-gradient(#c00, #fff 100px));
 }
 .black #rightnav a:first-child, .transparent #rightnav a:first-child {
 	-webkit-border-image: url("../images/iwebkit5/navrightblack.png") 0 13 0 5;
@@ -976,28 +992,39 @@ li:last-child.store .image, .store:last-child a {
 	-webkit-border-image: url("../images/iwebkit5/navlinkrightblack.png") 0 13 0 5;
 }
 .black #leftbutton a, .black #rightbutton a, .transparent #leftbutton a, .transparent #rightbutton a {
-	-webkit-border-image: url("../images/iwebkit5/navbuttonblack.png") 0 5 0 5;
+	// -webkit-border-image: url("../images/iwebkit5/navbuttonblack.png") 0 5 0 5;
+	@include border-image(url("../images/iwebkit5/navbuttonblack.png") 0 5 0 5);
 }
 #leftnav a:first-child {
 	z-index: 2;
-	-webkit-border-image: url("../images/iwebkit5/navleft.png") 0 5 0 13;
+	// -webkit-border-image: url("../images/iwebkit5/navleft.png") 0 5 0 13;
+	@include border-image(url("../images/iwebkit5/navleft.png") 0 5 0 13);
 	border-width: 0 5px 0 13px;
-	-webkit-border-top-left-radius: 16px;
-	-webkit-border-bottom-left-radius: 16px;
-	-webkit-border-top-right-radius: 6px;
-	-webkit-border-bottom-right-radius: 6px;
+	// -webkit-border-top-left-radius: 16px;
+	// -webkit-border-bottom-left-radius: 16px;
+	// -webkit-border-top-right-radius: 6px;
+	// -webkit-border-bottom-right-radius: 6px;
+	@include border-top-left-radius(16px);
+	@include border-bottom-left-radius(16px);
+	@include border-top-right-radius(6px);
+	@include border-bottom-right-radius(6px);
 	width: auto;
 }
 #leftnav a {
-	-webkit-border-image: url("../images/iwebkit5/navlinkleft.png") 0 5 0 13;
+	// -webkit-border-image: url("../images/iwebkit5/navlinkleft.png") 0 5 0 13;
+	@include border-image(url("../images/iwebkit5/navlinkleft.png") 0 5 0 13);
 	z-index: 3;
 	margin-left: -4px;
 	border-width: 0 5px 0 13px;
 	padding-right: 4px;
-	-webkit-border-top-left-radius: 16px;
-	-webkit-border-bottom-left-radius: 16px;
-	-webkit-border-top-right-radius: 6px;
-	-webkit-border-bottom-right-radius: 6px;
+	// -webkit-border-top-left-radius: 16px;
+	// -webkit-border-bottom-left-radius: 16px;
+	// -webkit-border-top-right-radius: 6px;
+	// -webkit-border-bottom-right-radius: 6px;
+	@include border-top-left-radius(16px);
+  @include border-bottom-left-radius(16px);
+  @include border-top-right-radius(6px);
+  @include border-bottom-right-radius(6px);
 	float: left;
 }
 #rightnav, #rightbutton, #bluerightbutton {
@@ -1028,14 +1055,18 @@ li:last-child.store .image, .store:last-child a {
 	-webkit-border-bottom-right-radius: 16px;
 }
 #leftbutton a, #rightbutton a {
-	-webkit-border-image: url("../images/iwebkit5/navbutton.png") 0 5 0 5;
+	// -webkit-border-image: url("../images/iwebkit5/navbutton.png") 0 5 0 5;
+	@include border-image(url("../images/iwebkit5/navbutton.png") 0 5 0 5);
 	border-width: 0 5px;
-	-webkit-border-radius: 6px;
+	// -webkit-border-radius: 6px;
+	@include border-radius(6px);
 }
 #blueleftbutton a, #bluerightbutton a {
-	-webkit-border-image: url("../images/iwebkit5/navbuttonblue.png") 0 5 0 5;
+	// -webkit-border-image: url("../images/iwebkit5/navbuttonblue.png") 0 5 0 5;
+	@include border-image(url("../images/iwebkit5/navbuttonblue.png") 0 5 0 5);
 	border-width: 0 5px;
-	-webkit-border-radius: 6px;
+	// -webkit-border-radius: 6px;
+	@include border-radius(6px);
 }
 input[type="checkbox"] {
 	width: 94px;
