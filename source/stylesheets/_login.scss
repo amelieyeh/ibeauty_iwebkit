@@ -1,0 +1,25 @@
+.log{
+  float:left;  
+}
+
+.login-input{
+  @include float-left;
+}
+
+.loginword{
+  font-size:18px;
+  padding:10px;
+}
+
+.fbconnect{
+  padding:5px 0;
+  width:300px;
+  margin:0 auto;
+  a{
+    width:284px;
+    height:40px;
+    display:block;
+    text-indent:-9999em;
+  }
+}
+

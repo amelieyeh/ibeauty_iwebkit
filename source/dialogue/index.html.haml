@@ -1,0 +1,27 @@
+#wrapper
+  #topbar
+    #title
+      FG愛漂亮
+    #leftnav= link_to "返回","index.html"
+  =partial "_partials/menu"
+  #content
+    .beautytitle
+      愛美話題
+      %span.beautyword 
+        看看女孩們都如何
+        %em 漂亮穿搭
+        、一起
+        %em 分享美麗心得
+    .graytitle 最新話題
+    %ul.pageitem
+      -8.times do
+        %li.store.issues
+          .userimg=link_to image_tag( lorem.image ("50x50"),:alt=>""),"/dialogue/get.html"
+          .userpost
+            %p
+              %span.username= lorem.name
+              %span.posttime= lorem.date
+            .post ZARA現在有5折活動，有誰要一起去衝？
+          %span.arrow
+        
+   

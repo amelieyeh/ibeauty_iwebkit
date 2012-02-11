@@ -1,0 +1,18 @@
+#wrapper
+  #topbar
+    #title
+      FG愛漂亮
+    #leftnav= link_to "返回","index.html"
+  =partial "_partials/menu"
+  #content
+    .graytitle
+      時尚好店
+      %span.beautyword 多看多逛才能培養好眼光!
+    %ul.pageitem
+      - 8.times do
+        %li.store.stores
+          %span.storeimg=link_to image_tag( lorem.image ("50x50"),:alt=>""),"/stores/single_store.html"
+          %span.storeinfo
+            .storename 天母嚴選
+            .storeintro= lorem.sentence
+          %span.arrow    

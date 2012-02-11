@@ -1,0 +1,32 @@
+#wrapper
+  #topbar
+    #title
+      FG愛漂亮
+    #leftnav= link_to "返回","/dialogue"
+  =partial "_partials/menu"
+  #content
+    .beautytitle.issue ZARA現在5折活動，有誰要一起去衝？
+    %ul.pageitem
+      %li.store.issue
+        .userimg= link_to image_tag( lorem.image ("50"),:alt=>""),"/user"
+        .issueinfo
+          .username= lorem.name
+          .posttime= lorem.date
+        %span.arrow
+      %li.textbox
+        .postcontent 最近ZARA在5折特價耶!!!快殺去搶購吧!!!!!!
+    .beautytitle.reply Replies
+    %ul.pageitem
+      -5.times do
+        %li.store.reply
+          .userimg= link_to image_tag( lorem.image ("50"),:alt=>""),"/user"
+          .issueinfo
+            .username.issuename= lorem.name
+            .posttime.issuetime= lorem.date
+          %p.postword 超便宜的說！對面的uniqlo都要哭哭了~超便宜的說！對面的uniqlo都要哭哭了~超便宜的說！對面的uniqlo都要哭哭了~
+          %span.arrow
+    .beautytitle.reply Leave a comment
+    %ul.pageitem
+      %li.textbox
+        %textarea{:name=>"textarea",:type=>"text"}  
+                
