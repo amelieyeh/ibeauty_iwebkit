@@ -1,9 +1,9 @@
 #wrapper
-  #topbar
-    #title
-      FG愛漂亮 
-    #leftnav
-      =link_to image_tag("iwebkit5/home.png",:alt=>"home"),"index.html"
+  =partial "_partials/topbar"
+  #leftnav
+    %a{:href=>"index.html"}
+      =image_tag("iwebkit5/home.png",:alt=>"home")
+    %a{:href=>"javascript:history.back()",:alt=>"返回"}返回
   =partial "_partials/menu"  
   %span.beautytitle
     看達人
